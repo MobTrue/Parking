@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Estacionamento</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Carros estacionados</h1>
+  <div class="input-container">
+    <input type="text" id="modelo" placeholder="Modelo do Veículo">
+    <input type="text" id="placa" placeholder="Placa" oninput="this.value = this.value.toUpperCase();">
+    <button onclick="adicionarVeiculo()">Registrar</button>
+  </div>
+  <table id="listaVeiculos">
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Placa</th>
+        <th>Hora de Entrada</th>
+        <th>Hora de Saída</th>
+        <th>Total a Pagar</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
